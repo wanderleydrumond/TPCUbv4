@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin_default">18dp</dimen>
+    <dimen name="activity_horizontal_margin_default">18dp</dimen>
+    <dimen name="activity_horizontal_margin_small">9dp</dimen>
+    <dimen name="activity_vertical_margin_small">9dp</dimen>
+    <dimen name="activity_horizontal_margin_big">30dp</dimen>
+    <dimen name="activity_vertical_margin_big">30dp</dimen>
+    <dimen name="title1">25sp</dimen>
+    <dimen name="title2">19sp</dimen>
+</resources>

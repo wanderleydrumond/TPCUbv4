@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_expandable_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/background"
+    android:padding="@dimen/activity_horizontal_margin_small">
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_big"/>
+</LinearLayout>

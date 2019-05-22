@@ -1,0 +1,19 @@
+<resources>
+    <string name="description_logo" translatable="false">ISEC Logo</string>
+    <string name="app_name">Ubiquous Computing v4</string>
+    <string name="tv_title">Practical Work</string>
+    <string name="b_send">SEND</string>
+    <string name="m_permission_denied">Permition Denied</string>
+    <string name="information_message">It is necessary allow access to GPS and storage. The app will be close. Bye</string>
+    <string name="b_ok" translatable="false">OK</string>
+    <string name="tv_x_axis">X Axis</string>
+    <string name="tv_y_axis">Y Axis</string>
+    <string name="tv_z_axis">Z Axis</string>
+    <string name="tv_x_axis_value">Value of X Axis</string>
+    <string name="tv_y_axis_value">Value of Y Axis</string>
+    <string name="tv_z_axis_value">Value of Z Axis</string>
+    <string name="rb_walk">Walking</string>
+    <string name="rb_run">Runing</string>
+    <string name="rb_drive">Driving</string>
+    <string name="sensors_list">Sensors List</string>
+</resources>
