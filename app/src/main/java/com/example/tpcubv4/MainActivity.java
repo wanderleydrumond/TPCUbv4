@@ -47,19 +47,19 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 switch (listCurrentposition) {
                     case 0:
                         //TODO GPS
-                        Toast.makeText(MainActivity.this, "Sensors List", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, R.string.text_gps_location, Toast.LENGTH_SHORT).show();
                         break;
                     case 1:
                         //TODO GYROSCOPE
-                        Toast.makeText(MainActivity.this, "Sensors List", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, R.string.text_gyroscope, Toast.LENGTH_SHORT).show();
                         break;
                     case 2:
                         //TODO ACCELEROMETER
-                        Toast.makeText(MainActivity.this, "Sensors List", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, R.string.text_accelerometer, Toast.LENGTH_SHORT).show();
                         break;
                     case 3:
                         deviceSensors.getSensorsList();
-                        Toast.makeText(MainActivity.this, R.string.sensors_list, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, R.string.text_sensors_list, Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return false;
@@ -69,14 +69,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(MainActivity.this, "List opened", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, R.string.text_list_expanded, Toast.LENGTH_SHORT).show();
             }
         });
 
         expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(MainActivity.this, "List closed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, R.string.text_list_collapsed, Toast.LENGTH_SHORT).show();
             }
         });
 
