@@ -101,15 +101,6 @@
             android:textColor="@color/text"/>
     </RadioGroup>
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/s_collect"
-        android:text="@string/s_collect"
-        android:textColor="@color/text"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/activity_vertical_margin_default"/>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
