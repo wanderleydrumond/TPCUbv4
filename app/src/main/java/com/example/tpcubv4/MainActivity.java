@@ -99,35 +99,35 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         listData = new HashMap<String, List<String>>();
 
         //Groups
-        listGroup.add("GPS");
-        listGroup.add("Gyroscope");
-        listGroup.add("Accelerometer");
-        listGroup.add("Sensors List");
+        listGroup.add(getString(R.string.text_gps_location));
+        listGroup.add(getString(R.string.text_gyroscope));
+        listGroup.add(getString(R.string.text_accelerometer));
+        listGroup.add(getString(R.string.text_sensors_list));
 
         //Items
         List<String> auxiliarylist = new ArrayList<String>();
-        auxiliarylist.add("Latitude");
-        auxiliarylist.add("Longitude");
-        auxiliarylist.add("Altitude");
+        auxiliarylist.add(getString(R.string.text_latitude));
+        auxiliarylist.add(getString(R.string.text_longitude));
+        auxiliarylist.add(getString(R.string.text_altitude));
         listData.put(listGroup.get(0), auxiliarylist);
         listCurrentposition = 0;
 
         auxiliarylist = new ArrayList<String>();
-        auxiliarylist.add("X Axis");
-        auxiliarylist.add("Y Axis");
-        auxiliarylist.add("Z Axis");
+        auxiliarylist.add(getString(R.string.tv_x_axis));
+        auxiliarylist.add(getString(R.string.tv_y_axis));
+        auxiliarylist.add(getString(R.string.tv_z_axis));
         listData.put(listGroup.get(1), auxiliarylist);
         listCurrentposition = 1;
 
         auxiliarylist = new ArrayList<String>();
-        auxiliarylist.add("Accelerometer value 1");
-        auxiliarylist.add("Accelerometer value 2");
-        auxiliarylist.add("Accelerometer value 3");
+        auxiliarylist.add(getString(R.string.text_accelerometer_value));
+        auxiliarylist.add(getString(R.string.text_accelerometer_value));
+        auxiliarylist.add(getString(R.string.text_accelerometer_value));
         listData.put(listGroup.get(2), auxiliarylist);
         listCurrentposition = 2;
 
         auxiliarylist = new ArrayList<String>();
-        auxiliarylist.add("Full sensors list");
+        auxiliarylist.add(getString(R.string.text_sensors_list));
         listData.put(listGroup.get(3), auxiliarylist);
         listCurrentposition = 3;
     }

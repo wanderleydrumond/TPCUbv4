@@ -21,4 +21,8 @@
     <string name="text_accelerometer">Accelerometer</string>
     <string name="text_list_expanded">List Expanded</string>
     <string name="text_list_collapsed">List Collapsed</string>
+    <string name="text_latitude" translatable="false">Latitude</string>
+    <string name="text_longitude" translatable="false">Longitude</string>
+    <string name="text_altitude" translatable="false">Altitude</string>
+    <string name="text_accelerometer_value">Accelerometer Value</string>
 </resources>
