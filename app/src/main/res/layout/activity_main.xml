@@ -98,6 +98,12 @@
             android:id="@+id/rb_drive"
             android:text="@string/rb_drive"
             android:textColor="@color/text"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_pedal"
+            android:text="@string/rb_pedal"
+            android:textColor="@color/text"/>
     </RadioGroup>
 
     <Button
