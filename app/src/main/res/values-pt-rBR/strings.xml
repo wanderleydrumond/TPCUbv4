@@ -14,5 +14,10 @@
     <string name="rb_walk">Caminhar</string>
     <string name="rb_run">Correr</string>
     <string name="rb_drive">Dirigir</string>
-    <string name="sensors_list">Lista de Sensores</string>
+    <string name="text_sensors_list">Lista de Sensores</string>
+    <string name="text_gps_location">Localização GPS</string>
+    <string name="text_gyroscope">Giroscópio</string>
+    <string name="text_accelerometer">Acelerômetro</string>
+    <string name="text_list_expanded">Lista Expandida</string>
+    <string name="text_list_collapsed">Lista Contraída</string>
 </resources>
