@@ -31,9 +31,9 @@ public class DeviceSensors extends AppCompatActivity {
         }
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         if (sensor != null)
-            Toast.makeText(getApplicationContext(), "Detected the following sensors:\n" + stringBuffer, Toast.LENGTH_LONG);
+            Toast.makeText(getApplicationContext(), getString(R.string.text_detected_sensors) + "\n" + stringBuffer, Toast.LENGTH_LONG);
         else
-            Toast.makeText(getApplicationContext(), "There are no sensors", Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(), getString(R.string.text_no_sensors) + "\n", Toast.LENGTH_SHORT);
     }
 
 }

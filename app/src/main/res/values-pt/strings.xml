@@ -21,4 +21,6 @@
     <string name="text_list_expanded">Lista Expandida</string>
     <string name="text_list_collapsed">Lista Contraída</string>
     <string name="text_accelerometer_value">Valor do Acelerômetro</string>
+    <string name="text_detected_sensors">"Os seguintes sensores foram detetados: "</string>
+    <string name="text_no_sensors">Nenhum sensor detetado</string>
 </resources>
