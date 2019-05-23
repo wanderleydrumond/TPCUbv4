@@ -79,7 +79,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/rg_activity_type"
         android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin_default">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,10 +101,20 @@
             android:textColor="@color/text"/>
     </RadioGroup>
 
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_collect"
+        android:text="@string/s_collect"
+        android:textColor="@color/text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin_default"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/b_send"
-        android:text="@string/b_send"/>
+        android:text="@string/b_send"
+        android:layout_marginTop="@dimen/activity_vertical_margin_default"/>
 
 </LinearLayout>
