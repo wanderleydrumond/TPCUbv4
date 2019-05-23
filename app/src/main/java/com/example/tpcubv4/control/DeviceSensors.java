@@ -16,6 +16,7 @@ public class DeviceSensors extends AppCompatActivity {
     private Sensor sensor;
     private SensorManager sensorManager;
 
+    //DEVICE SENSORS FULL LIST
     public void getSensorsList() {
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> deviceSensors = sensorManager.getSensorList(Sensor.TYPE_ALL);
@@ -33,10 +34,6 @@ public class DeviceSensors extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Detected the following sensors:\n" + stringBuffer, Toast.LENGTH_LONG);
         else
             Toast.makeText(getApplicationContext(), "There are no sensors", Toast.LENGTH_SHORT);
-    }
-
-    public void getAccelerometer() {
-        //TODO code here
     }
 
 }

@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public static Button bSend;
     public static TextView tvSensorList, tvXAxis, tvYAxis,tvZAxis, tvLatitude, tvLongitude, tvAltitude;
 
-    private boolean permission;
-
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -132,6 +130,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         listCurrentposition = 3;
     }
 
+    //ACCELEROMETER
     @Override
     public void onSensorChanged(SensorEvent event) {
         final float alpha = (float)0.8;
