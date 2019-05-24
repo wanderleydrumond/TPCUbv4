@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     ExpandableListView expandableListView;
     DeviceSensors deviceSensors = new DeviceSensors();
 
-    public static Button bSend;
-    public static TextView tvSensorList, tvXAxis, tvYAxis,tvZAxis, tvLatitude, tvLongitude, tvAltitude;
+    public Button bSend;
+    public TextView tvSensorList, tvXAxis, tvYAxis,tvZAxis, tvLatitude, tvLongitude, tvAltitude;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -147,8 +147,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         linear_acceleration[2] = event.values[2] - gravity[2];
 
         TextView tvXAxisValue = findViewById(R.id.tv_item);
+        TextView tvYAxisValue = findViewById(R.id.tv_item);
+        TextView tvZAxisValue = findViewById(R.id.tv_item);
 
-        tvXAxisValue.setText("X:"+linear_acceleration[0]+",Y:"+linear_acceleration[1]+",Z:"+linear_acceleration[2]);
+        tvXAxisValue.setText(getString(R.string.tv_x_axis) + linear_acceleration[0]);
+        tvYAxisValue.setText(getString(R.string.tv_y_axis) + linear_acceleration[1]);
+        tvZAxisValue.setText(getString(R.string.tv_z_axis) + linear_acceleration[2]);
 //        tvXAxisValue.setText("X:"+linear_acceleration[0]+",Y:"+linear_acceleration[1]+",Z:"+linear_acceleration[2]);
     }
 
