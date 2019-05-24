@@ -149,6 +149,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         TextView tvXAxisValue = findViewById(R.id.tv_item);
 
         tvXAxisValue.setText("X:"+linear_acceleration[0]+",Y:"+linear_acceleration[1]+",Z:"+linear_acceleration[2]);
+//        tvXAxisValue.setText("X:"+linear_acceleration[0]+",Y:"+linear_acceleration[1]+",Z:"+linear_acceleration[2]);
     }
 
     @Override

@@ -23,4 +23,5 @@
     <string name="text_accelerometer_value">Valor do Acelerômetro</string>
     <string name="text_detected_sensors">"Os seguintes sensores foram detectados: "</string>
     <string name="text_no_sensors">Nenhum sensor detectado</string>
+    <string name="rb_pedal">Pedalar</string>
 </resources>
