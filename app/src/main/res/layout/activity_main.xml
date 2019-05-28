@@ -74,44 +74,60 @@
         </ExpandableListView>
     </LinearLayout>
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/rg_activity_type"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/activity_vertical_margin_default">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rb_walk"
-            android:text="@string/rb_walk"
-            android:textColor="@color/text"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rb_run"
-            android:text="@string/rb_run"
-            android:textColor="@color/text"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rb_drive"
-            android:text="@string/rb_drive"
-            android:textColor="@color/text"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rb_pedal"
-            android:text="@string/rb_pedal"
-            android:textColor="@color/text"/>
-    </RadioGroup>
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/b_send"
-        android:text="@string/b_send"
-        android:layout_marginTop="@dimen/activity_vertical_margin_default"/>
+        android:id="@+id/ll_buttons"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_activity_type"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin_default"
+            android:layout_marginStart="@dimen/activity_vertical_margin_default">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_walk"
+                android:text="@string/rb_walk"
+                android:textColor="@color/text"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_run"
+                android:text="@string/rb_run"
+                android:textColor="@color/text"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_sit"
+                android:text="@string/rb_sitting"
+                android:textColor="@color/text"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_down"
+                android:text="@string/rb_down"
+                android:textColor="@color/text"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_up"
+                android:text="@string/rb_up"
+                android:textColor="@color/text"/>
+        </RadioGroup>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_send"
+            android:src="@drawable/send"
+            android:background="@color/background"
+            android:contentDescription="@string/ib_send_description" />
+    </LinearLayout>
 
 </LinearLayout>

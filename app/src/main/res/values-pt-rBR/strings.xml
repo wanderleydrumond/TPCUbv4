@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Computação Ubíqua v4</string>
     <string name="tv_title">Trabalho Prático</string>
-    <string name="b_send">ENVIAR</string>
+    <string name="ib_send">ENVIAR</string>
     <string name="m_permission_denied">Permissão Negada</string>
     <string name="information_message">É necessário aceitar as permissões de GPS e armazenamento. A app vai ser encerrada. Tchau</string>
     <string name="tv_x_axis">Eixo X</string>
@@ -13,7 +13,7 @@
     <string name="tv_z_axis_value">Valor do Eixo Z</string>
     <string name="rb_walk">Caminhar</string>
     <string name="rb_run">Correr</string>
-    <string name="rb_drive">Dirigir</string>
+    <string name="rb_sitting">Sentar</string>
     <string name="text_sensors_list">Lista de Sensores</string>
     <string name="text_gps_location">Localização GPS</string>
     <string name="text_gyroscope">Giroscópio</string>
@@ -23,5 +23,7 @@
     <string name="text_accelerometer_value">Valor do Acelerômetro</string>
     <string name="text_detected_sensors">"Os seguintes sensores foram detectados: "</string>
     <string name="text_no_sensors">Nenhum sensor detectado</string>
-    <string name="rb_pedal">Pedalar</string>
+    <string name="rb_down">Descer</string>
+    <string name="rb_up">Subir</string>
+    <string name="ib_send_description">Enviar valor para o servidor</string>
 </resources>

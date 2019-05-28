@@ -2,7 +2,7 @@
     <string name="description_logo" translatable="false">ISEC Logo</string>
     <string name="app_name">Ubiquous Computing v4</string>
     <string name="tv_title">Practical Work</string>
-    <string name="b_send">SEND</string>
+    <string name="ib_send">SEND</string>
     <string name="m_permission_denied">Permition Denied</string>
     <string name="information_message">It is necessary allow access to GPS and storage. The app will be close. Bye</string>
     <string name="b_ok" translatable="false">OK</string>
@@ -14,7 +14,7 @@
     <string name="tv_z_axis_value">Value of Z Axis</string>
     <string name="rb_walk">Walking</string>
     <string name="rb_run">Runing</string>
-    <string name="rb_drive">Driving</string>
+    <string name="rb_sitting">Sitting</string>
     <string name="text_sensors_list">Sensors List</string>
     <string name="text_gps_location">GPS Location</string>
     <string name="text_gyroscope">Gyroscope</string>
@@ -27,5 +27,7 @@
     <string name="text_accelerometer_value">Accelerometer Value</string>
     <string name="text_detected_sensors">"Detected the following sensors: "</string>
     <string name="text_no_sensors">No sensors detected</string>
-    <string name="rb_pedal">Pedaling</string>
+    <string name="rb_down">Down</string>
+    <string name="rb_up">Up</string>
+    <string name="ib_send_description">Send values to server</string>
 </resources>

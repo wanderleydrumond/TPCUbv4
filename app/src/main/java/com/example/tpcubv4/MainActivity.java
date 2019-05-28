@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,9 +25,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private HashMap<String, List<String>> listData;
     public static Integer listCurrentposition;
     ExpandableListView expandableListView;
-    DeviceSensors deviceSensors = new DeviceSensors();
+    DeviceSensors deviceSensors ; //= new DeviceSensors();
+    ImageButton ibSend;
 
-    public Button bSend;
     public TextView tvSensorList, tvXAxis, tvYAxis,tvZAxis, tvLatitude, tvLongitude, tvAltitude;
 
     @Override
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         Toast.makeText(MainActivity.this, R.string.text_accelerometer, Toast.LENGTH_SHORT).show();
                         break;
                     case 3:
+                        deviceSensors = new DeviceSensors();
                         deviceSensors.getSensorsList();
                         Toast.makeText(MainActivity.this, R.string.text_sensors_list, Toast.LENGTH_SHORT).show();
                         break;
@@ -67,14 +69,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(MainActivity.this, R.string.text_list_expanded, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, R.string.text_list_expanded, Toast.LENGTH_SHORT).show();
             }
         });
 
         expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(MainActivity.this, R.string.text_list_collapsed, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, R.string.text_list_collapsed, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -160,4 +162,5 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
+
 }
